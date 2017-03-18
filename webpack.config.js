@@ -1,6 +1,7 @@
 var path = require("path")
 var webpack = require('webpack')
 var BundleTracker = require('webpack-bundle-tracker')
+var ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
   context: __dirname,
@@ -19,6 +20,7 @@ module.exports = {
 
   plugins: [
     new BundleTracker({filename: './webpack-stats.json'}),
+    new ExtractTextPlugin({ filename: 'assets/main.css', allChunks: true })
   ],
 
   module: {
@@ -31,9 +33,16 @@ module.exports = {
         query: {presets: ['es2015', 'react']}  // to transform JSX into JS
       },
       {
-        test: /\.css$/,
-        loader: 'style-loader!css-loader'
+        test: /\.css$/, // required to load e.g. React Data-Grid css. Results in lots of duplicated css
+        loaders: ['style-loader', 'css-loader']
       },
+      {
+        test: /\.scss$/,
+        loaders: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'sass-loader']
+        })
+      }
     ]
   },
 
