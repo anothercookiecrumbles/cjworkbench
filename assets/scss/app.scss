@@ -1,0 +1,19 @@
+// ====================================
+// #APP - MAIN IMPORT SHEET
+// ====================================
+
+/*
+* Imports are in order of CSS specificity
+*/
+
+// SETTINGS
+@import 'settings/settings.global';
+
+// RESET
+@import 'reset/reset.normalize';
+
+// COMPONENTS
+@import 'current-styles'; // this is poorly named, but I intend to refactor this file
+
+// UTILITIES
+@import '../../node_modules/basscss/css/basscss.css';
