@@ -307,4 +307,3 @@ export default class WfModule extends React.Component {
     ); 
   } 
 }
-

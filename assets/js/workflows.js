@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { csrfToken } from './utils'
 
-require('../css/style.css');
+require('../scss/app.scss');
 
 class Workflows extends React.Component {
   constructor(props) {

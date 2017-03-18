@@ -10,7 +10,7 @@ import WfModule from './WfModule'
 import * as Actions from './workflow-reducer'
 import { getPageID, csrfToken } from './utils'
 
-require('../css/style.css');
+require('../scss/app.scss');
 
 
 // ---- Toolbar and buttons ----
