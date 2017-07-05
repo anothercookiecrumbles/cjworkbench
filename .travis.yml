@@ -15,15 +15,15 @@ matrix:
   include:
     - language: node_js
       node_js:
-        - "0.10"
+        - "7.7"
       python:
         - "3.5"
       install:
-        - "npm install"
+        - "npm install -g n"
         - "git submodule update --init --recursive"
         - "git submodule update --remote"
       script:
-        - "npm --harmony test"
+        - "npm test"
 
 git:
   submodules: true
