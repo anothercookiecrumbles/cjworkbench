@@ -4,7 +4,11 @@ python:
 node_js:
   - "7.7"
 install:
-  - "npm install -g npm"
+  - . $HOME/.nvm/nvm.sh
+  - nvm install stable
+  - nvm use stable
+  - npm install
+  - "npm install -g"
   - "pip install -r requirements.txt"
   - "pip install -r requirements-dev.txt"
   - "git submodule update --init --recursive"
