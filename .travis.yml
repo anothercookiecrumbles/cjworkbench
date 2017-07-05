@@ -13,7 +13,7 @@ matrix:
   include:
     - language: python
       python: 
-        - "3" 
+        - "3.5"
       install:
         - "npm install -g npm"
         - "pip install -r requirements.txt"
