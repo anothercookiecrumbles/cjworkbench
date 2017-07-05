@@ -1,4 +1,4 @@
-![Build status](https://travis-ci.org/anothercookiecrumbles/cjworkbench.svg?branch=master])
+![Build status](https://travis-ci.org/anothercookiecrumbles/cjworkbench.svg?branch=master)
    
    
 # cjworkbench
