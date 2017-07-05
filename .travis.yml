@@ -14,6 +14,8 @@ matrix:
     - language: python
       python: 
         - "3.5"
+      before_install:
+        - source ~/virtualenv/python3.5/bin/activate
       install:
         - "npm install -g npm"
         - "pip install -r requirements.txt"
