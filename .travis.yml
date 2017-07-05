@@ -20,6 +20,8 @@ matrix:
         - "3.5"
       install:
         - "npm install"
+        - "git submodule update --init --recursive"
+        - "git submodule update --remote"
       script:
         - "npm --harmony test"
 
