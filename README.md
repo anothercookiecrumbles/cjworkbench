@@ -1,3 +1,6 @@
+https://travis-ci.org/anothercookiecrumbles/cjworkbench.svg?branch=master
+   
+   
 # cjworkbench
 A visual dataflow programming system for journalists. More at on the [public server](blog.cjworkbench.org)!
 
