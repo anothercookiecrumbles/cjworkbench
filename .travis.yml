@@ -1,6 +1,6 @@
 language: python
 python: 
-  - "2.7.6"
+  - "3.5"
 install:
   - "npm install -g npm"
   - "pip install -r requirements.txt"
@@ -9,5 +9,6 @@ install:
   - "git submodule update --remote"
 script:
   - python manage.py test
+  - npm test
 git:
   submodules: true
