@@ -13,7 +13,7 @@ matrix:
   include:
     - language: python
       python: 
-        - "3.5"
+        - 3.5
       before_install:
         - source ~/virtualenv/python3.5/bin/activate
       install:
