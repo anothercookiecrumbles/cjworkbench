@@ -13,10 +13,10 @@ matrix:
   include:
     - language: python
       python: 
-        - 3.5
+        - "2.7"
+        - "3.6"
       before_install:
-        - ls ~/virtualenv/
-        - source ~/virtualenv/python3.5/bin/activate
+        - source ~/virtualenv/python3.6/bin/activate
       install:
         - "npm install -g npm"
         - "pip install -r requirements.txt"
