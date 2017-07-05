@@ -1,4 +1,4 @@
-https://travis-ci.org/anothercookiecrumbles/cjworkbench.svg?branch=master
+![Boom](https://travis-ci.org/anothercookiecrumbles/cjworkbench.svg?branch=master])
    
    
 # cjworkbench
